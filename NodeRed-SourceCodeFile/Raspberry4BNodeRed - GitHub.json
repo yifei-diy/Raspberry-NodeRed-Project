@@ -1,0 +1,1218 @@
+[
+    {
+        "id": "176dedf53cafa4d2",
+        "type": "tab",
+        "label": "流程 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "41f19bd0fc8db90b",
+        "type": "mqtt-broker",
+        "name": "NodeRed-test01",
+        "broker": "192.168.1.10",
+        "port": "1883",
+        "clientid": "Rasp2GB",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "06da45b30755b1c3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Times New Roman,Times,serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Times New Roman,Times,serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "MyStyle",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Times New Roman,Times,serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "17aad6923ee36812",
+        "type": "ui_tab",
+        "name": "Raspberry-4B智慧物联",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bbf50c92101f4857",
+        "type": "ui_group",
+        "name": "现场环境监测",
+        "tab": "17aad6923ee36812",
+        "order": 1,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "71ab95b3d5425126",
+        "type": "ui_group",
+        "name": "设备参数监测",
+        "tab": "17aad6923ee36812",
+        "order": 2,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "29754762fe484690",
+        "type": "ui_group",
+        "name": "智慧照明",
+        "tab": "17aad6923ee36812",
+        "order": 3,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1697bea008849fe9",
+        "type": "ui_group",
+        "name": "设备控制",
+        "tab": "17aad6923ee36812",
+        "order": 4,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e9a3a65c7ee7f986",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 1,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "e7685c74d8284190",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2afc68c424dbe608",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fb9dac5541b37924",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f38556b5465c683f",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1a475d334c4bcdb2",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2aaa1a147711fcf4",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "900179d3ef2b3afb",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "21277eed244e6058",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "814db454c68f66c0",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a85d9fd2da40252e",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "bbf50c92101f4857",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "51bad062d5109f27",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "71ab95b3d5425126",
+        "order": 1,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "59a13ba93a12b6e6",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "71ab95b3d5425126",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b50482a0ae695ec0",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "71ab95b3d5425126",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7bd12c6683848635",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "71ab95b3d5425126",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d0bca55ea625081e",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "71ab95b3d5425126",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "6af634707a267ec4",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "71ab95b3d5425126",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7ab2702c071b15e9",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d22bfe2a618cd61b",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b64f2b82c68677e8",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f1346b6e2333a247",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a9e888f49dc978f2",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8334e04beb4a789c",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e69004940242ac19",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0b2b4416c506130a",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e2aca9919d3b338f",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6ba901ea8b46ea90",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "504e946af0482ebc",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6c8ece2e48a0f65d",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 14,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "dbee1eb21e4f4e02",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "80c6154e5bd4b651",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f06b6f24d43a849c",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 18,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "54323a471ba4953a",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "1697bea008849fe9",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cca5d1f59a965b21",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a1ba0bd183baaec5",
+        "type": "ui_gauge",
+        "z": "176dedf53cafa4d2",
+        "name": "温度",
+        "group": "bbf50c92101f4857",
+        "order": 4,
+        "width": 6,
+        "height": 5,
+        "gtype": "compass",
+        "title": "温度监测",
+        "label": "℃",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f98b81d5110bb949",
+        "type": "ui_gauge",
+        "z": "176dedf53cafa4d2",
+        "name": "湿度",
+        "group": "bbf50c92101f4857",
+        "order": 3,
+        "width": 6,
+        "height": 5,
+        "gtype": "wave",
+        "title": "湿度监测",
+        "label": "(%)",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "3abe5113d8e70748",
+        "type": "ui_gauge",
+        "z": "176dedf53cafa4d2",
+        "name": "电流",
+        "group": "71ab95b3d5425126",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "电流",
+        "label": "(A)",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "1.5",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "090cd613efc6d785",
+        "type": "ui_gauge",
+        "z": "176dedf53cafa4d2",
+        "name": "电压",
+        "group": "71ab95b3d5425126",
+        "order": 4,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "电压",
+        "label": "(V)",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "ad841eb85462f07f",
+        "type": "ui_gauge",
+        "z": "176dedf53cafa4d2",
+        "name": "光照度监测",
+        "group": "29754762fe484690",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "gtype": "donut",
+        "title": "光照度监测",
+        "label": "(lux)",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#00e600",
+            "#bacb3a"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 770,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "07efbfdc67567cdf",
+        "type": "ui_chart",
+        "z": "176dedf53cafa4d2",
+        "name": "光照度趋势",
+        "group": "29754762fe484690",
+        "order": 2,
+        "width": 8,
+        "height": 5,
+        "label": "光照度趋势（lux）",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7a84ef28e5f5f5b",
+        "type": "ui_button",
+        "z": "176dedf53cafa4d2",
+        "name": "电机启动",
+        "group": "1697bea008849fe9",
+        "order": 15,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "电机启动",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 400,
+        "wires": [
+            [
+                "3346caf8498e0d13"
+            ]
+        ]
+    },
+    {
+        "id": "ab334b6959eda865",
+        "type": "ui_button",
+        "z": "176dedf53cafa4d2",
+        "name": "电机停止",
+        "group": "1697bea008849fe9",
+        "order": 13,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "电机停止",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 480,
+        "wires": [
+            [
+                "3346caf8498e0d13"
+            ]
+        ]
+    },
+    {
+        "id": "dec243951024fda1",
+        "type": "ui_slider",
+        "z": "176dedf53cafa4d2",
+        "name": "灯光控制",
+        "label": "灯光控制",
+        "tooltip": "",
+        "group": "29754762fe484690",
+        "order": 3,
+        "width": 14,
+        "height": 2,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "1000",
+        "step": 1,
+        "className": "",
+        "x": 140,
+        "y": 760,
+        "wires": [
+            [
+                "bf0317fb70c78078",
+                "4b2b935d646be01e"
+            ]
+        ]
+    },
+    {
+        "id": "9f98fed3e69c38b4",
+        "type": "ui_chart",
+        "z": "176dedf53cafa4d2",
+        "name": "设备电流趋势（A）",
+        "group": "1697bea008849fe9",
+        "order": 2,
+        "width": 12,
+        "height": 5,
+        "label": "设备电流趋势（A）",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1.5",
+        "removeOlder": 1,
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "893a349d159eb97a",
+        "type": "mqtt in",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "topic": "Topic/CurrentVoltagePub",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "41f19bd0fc8db90b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 480,
+        "wires": [
+            [
+                "c60dad23f721f2bb",
+                "cd9cf74dea792249"
+            ]
+        ]
+    },
+    {
+        "id": "d3445d695cfd0e55",
+        "type": "mqtt in",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "topic": "Topic/LumPub",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "41f19bd0fc8db90b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 680,
+        "wires": [
+            [
+                "e5a751d5d328acd6",
+                "b4760aa07fce8766"
+            ]
+        ]
+    },
+    {
+        "id": "c60dad23f721f2bb",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e5a751d5d328acd6",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "481d244190f94410",
+        "type": "json",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "cca5d1f59a965b21",
+                "52b289aa4d31554a",
+                "3324f005e5a2d346"
+            ]
+        ]
+    },
+    {
+        "id": "1d963d022e073993",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "52b289aa4d31554a",
+        "type": "template",
+        "z": "176dedf53cafa4d2",
+        "name": "Temp",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.Temp}}",
+        "output": "str",
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [
+                "a1ba0bd183baaec5",
+                "1d963d022e073993"
+            ]
+        ]
+    },
+    {
+        "id": "3324f005e5a2d346",
+        "type": "template",
+        "z": "176dedf53cafa4d2",
+        "name": "Hum",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.Hum}}",
+        "output": "str",
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "f98b81d5110bb949"
+            ]
+        ]
+    },
+    {
+        "id": "cd9cf74dea792249",
+        "type": "json",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "7ee859811979f677",
+                "e85b28c46ee9c0d7"
+            ]
+        ]
+    },
+    {
+        "id": "7ee859811979f677",
+        "type": "template",
+        "z": "176dedf53cafa4d2",
+        "name": "Current",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.Current}}",
+        "output": "str",
+        "x": 580,
+        "y": 440,
+        "wires": [
+            [
+                "3abe5113d8e70748",
+                "9f98fed3e69c38b4"
+            ]
+        ]
+    },
+    {
+        "id": "e85b28c46ee9c0d7",
+        "type": "template",
+        "z": "176dedf53cafa4d2",
+        "name": "Voltage",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.Voltage}}",
+        "output": "str",
+        "x": 580,
+        "y": 520,
+        "wires": [
+            [
+                "090cd613efc6d785"
+            ]
+        ]
+    },
+    {
+        "id": "b4760aa07fce8766",
+        "type": "json",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 370,
+        "y": 680,
+        "wires": [
+            [
+                "a4ab82b5b016707e"
+            ]
+        ]
+    },
+    {
+        "id": "a4ab82b5b016707e",
+        "type": "template",
+        "z": "176dedf53cafa4d2",
+        "name": "Lum",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.Lum}}",
+        "output": "str",
+        "x": 570,
+        "y": 680,
+        "wires": [
+            [
+                "ad841eb85462f07f",
+                "07efbfdc67567cdf"
+            ]
+        ]
+    },
+    {
+        "id": "a276b30d64e08b23",
+        "type": "mqtt out",
+        "z": "176dedf53cafa4d2",
+        "name": "MotorControl",
+        "topic": "Topic/MotorSub",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "41f19bd0fc8db90b",
+        "x": 1490,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d94bb5758bd148c5",
+        "type": "mqtt out",
+        "z": "176dedf53cafa4d2",
+        "name": "MotorControl",
+        "topic": "Topic/LumSub",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "41f19bd0fc8db90b",
+        "x": 530,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "bf0317fb70c78078",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "光照度数值打包",
+        "func": "msg.payload = { \"SetLum\": msg.payload };\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 760,
+        "wires": [
+            [
+                "d94bb5758bd148c5",
+                "cb231d63a6a552d7"
+            ]
+        ]
+    },
+    {
+        "id": "cb231d63a6a552d7",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "4b2b935d646be01e",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "3346caf8498e0d13",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "光照度数值打包",
+        "func": "msg.payload = { \"MotorSet\": msg.payload };\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 440,
+        "wires": [
+            [
+                "a276b30d64e08b23"
+            ]
+        ]
+    },
+    {
+        "id": "8c8e6ab4210efd35",
+        "type": "mqtt in",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "topic": "Topic/TempHumPub",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "41f19bd0fc8db90b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "481d244190f94410"
+            ]
+        ]
+    }
+]
